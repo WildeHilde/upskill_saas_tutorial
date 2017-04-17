@@ -13,7 +13,23 @@
  *= require_tree .
  *= require_self
  */
+ 
+ @import 'bootstrap-sprockets';
+ @import 'bootstrap';
 
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
+}
+
+.home-callout {
+  margin-top: -20px;
+  padding: 50px 0px 100px 0px;
+  color: black;
+}
+
+.navbar, .home-callout {
+  // gradient provided by uigradients.com
+  background: #43C6AC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
